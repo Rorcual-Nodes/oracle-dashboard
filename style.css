@@ -5,6 +5,7 @@ table {
   padding: 0;
   width: 100%;
   table-layout: fixed;
+  max-width: 600px;
 }
 
 table caption {
@@ -22,13 +23,17 @@ table th,
 table td {
   padding: .625em;
   text-align: center;
+  text-transform: uppercase;
 }
 
 table th {
   font-size: .85em;
   letter-spacing: .1em;
   text-transform: uppercase;
+  font-weight: bold;
 }
+
+tr:nth-child(even) {background-color: darkgrey;}
 
 @media screen and (max-width: 600px) {
   table {
